@@ -1,0 +1,21 @@
+### Listar Todos os Produtos:
+
+GET http://localhost:3000/folha/listar
+
+### Buscar cliente { CPF / MES / ANO }:
+
+GET http://localhost:3000/folha/buscar/123.456.789-12/5/2023
+
+### Cadastrar o cliente:
+
+POST http://localhost:3000/folha/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Diogo Steinke Deconto",
+    "cpf" : "123.456.789-12",
+    "horas" : "100",
+    "valor" : "50",
+    "mes" : "5",
+    "ano" : "2023"
+}
